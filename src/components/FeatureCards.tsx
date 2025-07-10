@@ -1,6 +1,7 @@
 "use client";
 
 import { Zap, BarChart3, Shield } from "lucide-react";
+import AdsterraBanner from "./AdsterraBanner";
 
 export function FeatureCards() {
   const features = [
@@ -76,32 +77,12 @@ export function FeatureCards() {
           ))}
         </div>
 
-        {/* Stats section */}
+        {/* Ad section */}
         <div className="mt-20 p-8 bg-gradient-to-r from-primary/10 via-purple-600/10 to-pink-600/10 rounded-2xl border border-primary/20">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-            <div>
-              <div className="text-3xl md:text-4xl font-bold text-primary mb-2">
-                500K+
-              </div>
-              <div className="text-gray-600 dark:text-gray-300">
-                Happy Users
-              </div>
-            </div>
-            <div>
-              <div className="text-3xl md:text-4xl font-bold text-primary mb-2">
-                2M+
-              </div>
-              <div className="text-gray-600 dark:text-gray-300">
-                Links Shortened
-              </div>
-            </div>
-            <div>
-              <div className="text-3xl md:text-4xl font-bold text-primary mb-2">
-                99.9%
-              </div>
-              <div className="text-gray-600 dark:text-gray-300">Uptime</div>
-            </div>
-          </div>
+          <h1 className="text-center text-4xl font-extrabold bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 text-transparent bg-clip-text mb-6">
+            Sponsors
+          </h1>
+          <AdsterraBanner />
         </div>
       </div>
     </section>
